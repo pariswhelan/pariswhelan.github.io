@@ -1,0 +1,753 @@
+/* Style CSS Page */
+
+
+            /* Font (used for Grip Icon 1.3) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+            /* Font (Playfair Display) */ 
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+
+            /* Whole Page Styles */
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Playfair Display', serif; }
+
+            /* Whole Body Styles */
+        body, html {
+            height: 100%;
+            margin: 0px; }
+
+
+/* 1.0 Home Page */
+
+
+    /* 1.1 Hero Image */
+    
+            /* Image Container */
+        .hero-image {
+            background-image: url("../Images/heroimageocean.jpg");
+            height: 85%;
+            background-position: center;
+            background-size: cover;
+            position: relative; }
+
+            /* Text Container */
+        .hero-text  {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            color: white;}
+
+            /* 'Go Adrift' */
+        .hero-image h1 {
+            font-size: 5em; }
+
+            /* Subline */
+        .hero-image p {
+            font-size: 1.4em; 
+            text-align: center;
+            margin-top: 10px; }
+
+
+    /* 1.2 Header */
+
+            /* Sticky Nav */
+        header { 
+            top: 0px;
+            position: sticky; 
+            z-index: 10; }
+
+
+    /* 1.3 Navigation */
+
+        .mainnav a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+            padding: 10px; }
+
+            /* Grip Styles */
+        .mainnav label {
+            padding: 10px 20px 10px 20px;             
+            font-size: 2em; 
+            color: #396A82; }
+
+            /* Nav Positioning */
+        .mainnav {
+            background-color: white;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            display: flex; 
+            box-shadow: 10px 3px 4px -1px rgba(0,0,0,0.25); }
+
+        .mainnav ul {
+            width: 100%;
+            list-style: none; }
+
+        .mainnav a {
+            display: block;
+            color: #4AA9BF; }
+
+        .mainnav > ul > li {
+            border-top: 1px solid #4AA9BF; }
+
+            /* Active Page */
+        .active {
+            font-style: italic; }
+
+            /* Hide Nav by Default */
+        .mainnav > ul {
+            display: none; }
+
+            /* Submenu Styles */
+        .submenu {
+            font-size: 0.8em;
+            background-color: rgba(255, 255, 255, 0.5); }
+
+        .submenu a {
+            color: black;
+            padding-left: 45px; }
+
+            /* Arrows */
+        .submenu a:before {
+            content: '\21FE   '; 
+            color: #4AA9BF; }
+
+        .navToggle {
+            cursor: pointer; }
+
+            /* Grip Hover */
+        .navToggle:hover, #navToggle:checked + .navToggle {
+            background-color: #77C6D8;
+            color: #396A82;}
+
+            /* Display Nav When Checked */
+        #navToggle:checked ~ ul {
+            min-height: 100vh;
+            display: block;
+            height: auto; }
+
+            /* Hide Textbox */
+        #navToggle {
+            display: none; }
+
+
+    /* 1.4 Quote */
+
+        .quote {
+            margin-bottom: 30px;
+            font-size: 20px;
+            padding: 40px;
+            text-align: center;
+            line-height: 35px; 
+            max-width: 800px;
+            margin: 0 auto; }
+
+
+    /* 1.5 Line */
+
+        hr { 
+            border-color: #4AA9BF;
+            border-width: thin;
+            margin-bottom: 30px; }
+
+
+    /* 1.6 Banner Images */
+
+            /* Image Container */
+        .bannercontainer {
+            display: flex; 
+            flex-direction: column; }
+
+            /* Image Styles */
+        .bannercontainer img {
+            width: 300px;
+            height: auto; 
+            margin: 10%;
+            margin-bottom: 0;
+            opacity: 0.75; 
+            text-align: center;}
+
+            /* Text Styles */
+        .bannercontainer a {
+            position: relative;
+            font-size: 3em;
+            color: white;
+            text-align: center;
+            text-shadow: 3px 4px 6px rgba(0,0,0,1);
+            text-decoration: none; }
+
+            /* Text Positioning */
+        .bannercontainer p {
+            position: absolute;
+            left: 10%;
+            right: 10%;
+            bottom: 30%;
+            text-align: center; }
+
+            /* Hover */
+      .partybanner:hover img {
+            opacity: 0.5;
+            transition: ease-out 0.25s;  
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+      .adventurebanner:hover img {
+            opacity: 0.5;
+            transition: ease-out 0.25s;  
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+      .relaxbanner:hover img {
+            opacity: 0.5;
+            transition: ease-out 0.25s;  
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+
+    /* 1.7 Packages Info */
+
+            /* Section Container */
+        .packagesinfo {
+            margin-top: 50px;
+            background-color: #dbf0f2;
+            padding-top: 40px;
+            text-align: center; }
+
+            /* SVG Triangle Styles */
+        .triangle {
+            display: inline;
+            height: 100px;
+            margin-top: -100px; }
+
+            /* Icon Container */
+        .packagesicons {
+            max-width: 800px;
+            margin: 0 auto; }
+
+            /* Icon Styles */
+        .packagesicons img {
+            height: 60px; }
+
+        figure {
+            display: inline-block; 
+            width: 30%; }
+
+            /* Caption Styles */
+        figcaption { 
+            caption-side: bottom; }
+       
+            /* Text Styles */
+        .packagesinfo h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            text-align: center; }
+        
+        .packagesinfo p {
+            padding: 40px;
+            text-align: justify; 
+            max-width: 800px;
+            margin: 0 auto; }
+
+
+    /*1.8 Thumbnail Gallery*/
+
+            /* Container Styles */
+        .thumbnail-gallery {
+            width: 100%;
+            margin-top: 3em; }
+
+        .thumbnail-gallery ul {
+            margin: 0 auto;
+            text-align: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 3em; }
+
+        .thumbnail-gallery ul li {
+            padding: 0;
+            margin: 0;
+            flex-basis: 10%;
+            flex-grow: 1;
+            flex-shrink: 1; }
+
+            /* Image Styles */
+        .thumbnail-gallery ul li img {
+            position: relative;
+            z-index: 1;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            -ms-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            width: 100%; }
+
+            /* Hover */
+        .thumbnail-gallery ul li:hover img {
+            transform: scale(1.5);
+            z-index: 3;
+            -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.4);}
+
+
+    /*1.9 Footer*/
+
+            /* Container Styles */
+        footer {
+            margin-top: 60px;
+            background-color: #77C6D8;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 20px; }
+
+        .footernav ul {
+            list-style-type: none;
+            width: 100%;
+            text-align: center;
+            display: inline-flex;
+            padding-left: 0px;
+            padding-right: 0px; }
+
+        .footernav li {
+            font-size: 15px;
+            text-align: center; 
+            width: 50%; }   
+
+            /* Link Styles */
+        .footernav a {
+            text-decoration: none;
+            color: black; 
+            line-height: 30px; }
+
+            /* Trademark Styles */
+        footer > p {
+            font-size: 10px;
+            text-align: center;
+            color: dimgrey; }
+
+            /* Hover */
+        .footernav a:hover {
+            color: #dbf0f2; 
+            transition: ease-out 0.25s;  }
+
+            /* Line Break Styles */
+        footer > hr {
+            border-style: dotted; }
+
+
+
+/* 2.0 Category Pages */
+
+
+    /* 2.1 Small Hero Image */
+
+            /* Image Styles (for all pages except home) */
+        .hero-image-small {
+            background-image: url("../Images/heroimageocean.jpg");
+            height: 15%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative; }
+
+            /* Text Styles (for all pages except home)*/
+        .hero-image-small h1 {
+            font-size: 3em;
+            float: left;
+            color: white;
+            padding: 10px; }
+
+
+    /* 2.2 Cruise Cards */
+
+            /* Container Styles */
+        .cruisecard {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 75%;
+            max-width: 700px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            text-align: center; }
+
+            /* Image Styles */
+        .cruisecard img {
+            width: 100%;
+            height: auto; }
+
+            /* Text Styles */
+        .cardtitle {
+            font-size: 35px;
+            color: #4AA9BF;
+            padding-bottom: 15px;
+            padding-top: 15px; }
+
+        .cardprice {
+            color: grey;
+            font-size: 30px;}
+
+        .carddays {
+            color: grey;
+            margin-bottom: 30px; }
+
+        .carddetails {
+            color: black; 
+            padding: 0px 10px 0px 10px; }
+
+        .cardlocations {
+            color: #4AA9BF;
+            margin-bottom: 30px;
+            margin-top: 30px; 
+            padding: 0px 10px 0px 10px; }
+
+        .cardreview {
+            text-align: center;
+            padding: 0px 10px 0px 10px;
+            font-style: italic; }
+
+        .cardreviewrating {
+            color: #396A82; 
+            padding: 10px;}
+
+            /* Review Info Container Styles */
+        .cardreviewinfo {
+            display: flex;
+            width: 100%;
+            color: #4AA9BF;
+            padding: 10px; 
+            margin-bottom: 20px;}
+
+        .cardreviewname {
+            width: 20%; }
+
+        .cardreviewcruise {
+            width: 60%; }
+
+        .cardreviewyear {
+            width: 20%; }
+
+
+/* 3.0 Detail Pages */
+
+
+    /* 3.1 Headings */
+
+        .detailheading {
+            font-size: 3em;
+            color: #4AA9BF;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-align: center; }
+
+    /* 3.2 Maps */
+    
+            /* Container Styles */
+        .map {
+            display: flex;
+            z-index: -1;
+            text-align: center;
+            margin: 0 auto;
+            justify-content: center;}
+
+        .map section {
+            max-width: 400px;
+            width: 100%;
+            position: relative; }
+
+        .map img {
+            height: auto; }
+
+            /* Markers */
+        .map li {
+            position: absolute;
+            list-style: none; }
+
+        .map a {
+            text-decoration: none;
+            display: inline-block;
+            color: #316f7d;
+            font-weight: bold; }
+
+            /* Croatia Markers */
+        #trogir {
+            left: 27%;
+            top: 46%; }
+
+        #vis {
+            left: 19%;
+            bottom: 5%; }
+
+        #hvar {
+            left: 38%;
+            bottom: 13%; }
+
+        #bol {
+            left: 44%;
+            bottom: 24%; }
+
+        #naturalbay {
+            right: 25%;
+            bottom: 19%; }
+
+        #split {
+            left: 37%;
+            top: 40%; }
+
+            /* Hawaii Markers */
+        #molokai {
+            right: 32%;
+            top: 38%; }
+
+        #lanai {
+            right: 34%;
+            bottom: 48%; }
+
+        #olowalu {
+            right: 27%;
+            bottom: 38%; }
+
+        #honomalinobay {
+            right: 18%;
+            bottom: 10%; }
+
+        #kailuaakona {
+            right: 30%;
+            top: 26%; }
+
+            /* Caribbean Markers */
+        #sopershole {
+            left: 18%;
+            top: 14%; }
+
+        #gustavia {
+            right: 32%;
+            top: 11%; }
+
+        #basseterre {
+            right: 12%;
+            top: 25%; }
+
+        #terredehaut {
+            right: 3%;
+            bottom: 49%; }
+
+        #castries {
+            right: 17%;
+            bottom: 26%; }
+
+        #salinebay {
+            right: 15%;
+            bottom: 7%; }
+
+            /* Marker Circles */
+        .map a::before {
+            width: 12px;
+            height: 12px;
+            border-radius: 10px; 
+            left: -6px; 
+            background-color: #4AA9BF;
+            position: relative;
+            display: inline-block;
+            content: '';
+            transition: all 0.3s cubic-bezier(.5,-.41,.19,2.44); }
+
+            /* Marker Animations */
+        .map li:hover a::before {
+            transform: scale(1.4);}
+
+            /* Underline Animations */ 
+        .map a::after {
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            width: 0%;
+            border-bottom: 2px solid #77C6D8;
+            content: '';
+            transition: all 0.3s ease-out; }
+
+        .map li:hover a::after {
+            width: 85%; }
+
+
+    /* 3.3 Daily Itinery */
+
+            /* Container Styles */
+        .itinery {
+            width:100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            padding-top: 50px; }
+
+        .itineryboxes {
+            padding: 0px 40px 0px 40px;
+            text-align: justify;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 10px;
+            display: flex; }
+
+        .itineryboxes p {
+            padding-right: 10px; }
+
+            /* Image Styles */
+        .itinery img { 
+            height: 150px;
+            opacity: 0.8;
+            margin: auto; }
+
+            /* Image Hover */
+        .itinery img:hover {
+            transform: scale(1.5);
+            opacity: 1;
+            transition: ease-out 0.4s; 
+            z-index: 3;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.4);}
+
+            /* Heading Styles */
+        .itinery strong { 
+            color:#4AA9BF; }
+
+
+    /* 3.4 Country Cards */
+
+            /* Container Styles */
+        .countrycard {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 75%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            text-align: center; }
+
+    /* 3.5 Book Now Button */
+
+            /* Book Now Button */
+        .button {
+            text-decoration: none;
+            display: inline-block;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: white;
+            background-color: #4AA9BF;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.3em; }
+
+            /* Book Now Hover */
+        .button:hover {
+            background-color: #77C6D8; 
+            transition: ease-out 0.25s; }
+
+
+
+
+
+/* 4.0 About & References Page */
+
+            /* Container Styles */
+        .about-references {
+            padding: 0px 40px 0px 40px;
+            max-width: 800px;
+            margin: 0 auto; }
+
+            /* Text Styles */
+        .about-references h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: #4AA9BF; }
+            
+        .about-references p {
+            text-align: justify;
+            margin-bottom: 15px; }
+
+
+/* 5.0 Media (Desktop Version) */
+
+            /* 600px Min Width */
+    @media only screen and (min-width: 600px) {
+
+            /* Horizontal Nav */
+        .mainnav {
+            flex-wrap: nowrap;
+            text-align: center; 
+            font-size: 0.9em; }
+
+        .mainnav ul {
+            box-shadow: 10px 3px 4px -1px rgba(0,0,0,0.25); }
+    
+        .mainnav li {
+            width: 100%; }
+
+        .mainnav a {
+            line-height: 50px;
+            background-color: white; }
+    
+        ul.submenu {
+            position: absolute;
+            padding: 10px 0;
+            left: 0;
+            width: 100%;
+            display: none;
+            border-top: 2px solid #4AA9BF;
+            background-color: white; }
+
+        ul.submenu > li > a {
+            line-height: 40px;
+            padding: 0 20px; }
+    
+        .mainnav > ul, #navToggle:checked ~ ul {
+            display: flex;
+            width: 100%;
+            min-height: 0; }
+    
+            /* Hover */
+        .mainnav a:hover {
+            color: #4AA9BF; }
+
+        ul.submenu > li > a:hover {
+            background: #77C6D8;
+            color: white;  }
+        
+        ul > li:hover > ul.submenu {
+            display: block; 
+            width: 100%; }
+
+            /* Hide Grip (3 lines) */
+        label {
+            display: none; } 
+    
+            /* Increase Size - Triangle from  1.7 Packages Info */
+        .triangle {
+            height: 150px;
+            margin-top: -100px; }}
+
+            /* 800px Min Width */
+    @media (min-width: 800px) {
+        
+            /* Horizontal Banner Images */
+        .bannercontainer {                    
+            flex-direction: row; 
+            justify-content: space-evenly;} 
+
+        .bannercontainer img {
+            margin: 0px; } 
+
+            /* Text Positioning */
+        .bannercontainer p {
+            left: 5%;
+            right: 5%;
+            bottom: 40%; } }
+
+
+
